@@ -1,25 +1,32 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WetterApp</title>
+    <title>Timer und Stoppuhr</title>
     <link rel="stylesheet" href="style.css">
-    <script src="./template.js"></script>
 </head>
 <body>
-    <header>
-        <img class="logo" src="./assets/icon/day-cloud-fog-icon.png" alt="" srcset="">
-        <h1>WetterApp</h1>
-    </header>
-    <main id="content">
-        
-    </main>
-    <footer>
-        <img class="logo" src="./assets/icon/day-cloud-fog-icon.png" alt="" srcset="">
-    </footer>
+    <div class="container">
+        <h1>Timer und Stoppuhr</h1>
 
-    <script src="config.js"></script>
-    <script src="script.js"></script>
+        <div class="timer">
+            <h2>Timer</h2>
+            <div class="time-display" id="timer-display">00:00</div>
+            <input type="number" id="timer-minutes" placeholder="Minuten" min="0">
+            <button onclick="startTimer()">Start</button>
+            <button onclick="resetTimer()">Reset</button>
+        </div>
+
+        <div class="stopwatch">
+            <h2>Stoppuhr</h2>
+            <div class="time-display" id="stopwatch-display">00:00:00</div>
+            <button onclick="startStopwatch()">Start</button>
+            <button onclick="stopStopwatch()">Stop</button>
+            <button onclick="resetStopwatch()">Reset</button>
+        </div>
+    </div>
+
+    <script src="template.js"></script>
 </body>
 </html>

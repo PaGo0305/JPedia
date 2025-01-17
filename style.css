@@ -1,123 +1,38 @@
-* {
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background-color: #f4f4f4;
 }
-
-body, html {
-    height: 100%;
-    font-family: 'Arial', sans-serif;
-    background-color: #f5f5f5;
+.container {
+    margin-top: 50px;
+}
+h1 {
     color: #333;
 }
-
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-header {
-    background-color: #ffffff; 
-    border-bottom: 1px solid #ddd;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.timer, .stopwatch {
+    margin: 20px auto;
     padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    width: 300px;
 }
-
-header .logo {
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
-}
-
-header h1 {
+.time-display {
     font-size: 2rem;
-    color: #007bff; 
+    margin: 10px 0;
 }
-
-main {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-
-footer {
-    background-color: #ffffff; 
-    border-top: 1px solid #ddd; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); 
-}
-
-footer .logo {
-    width: 40px;
-    height: 40px;
-}
-
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 1.5rem;
-    }
-
-    header .logo, footer .logo {
-        width: 40px;
-        height: 40px;
-    }
-}
-
-
-
-.weather-card {
-    background-color: #ffffff; 
-    border: 1px solid #ddd; 
-    border-radius: 8px; 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-    padding: 20px;
-    max-width: 300px; 
-    text-align: center;
-    margin: 10px;
-}
-
-.weather-date {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #007bff; 
-    margin-bottom: 15px;
-}
-
-.weather-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.temp-range {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-.temp-low, .temp-high {
+button {
+    margin: 5px;
+    padding: 10px 20px;
     font-size: 1rem;
-    color: #333; 
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
 }
-
-.wind-speed {
-    font-size: 1rem;
-    color: #555; 
-}
-
-@media (max-width: 768px) {
-    .weather-card {
-        max-width: 100%; 
-    }
+button:hover {
+    background-color: #0056b3;
 }
